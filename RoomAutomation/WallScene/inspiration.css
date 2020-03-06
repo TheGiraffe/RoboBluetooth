@@ -1,0 +1,296 @@
+@import url(css/fonts/CaviarDreams/stylesheet.css);
+@import url(css/fonts/uppereastside/stylesheet.css);
+body
+{
+  transition: background 0.5s linear;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 200px 200px;
+    background-color: #f8f9a7;
+    color: #579979;
+    font-family: sans-serif;
+    font-family: 'caviar_dreamsregular';
+    font-size: 90%;
+}
+#top, #bottom, #left, #right {
+	background: black;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 100px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 100px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+body.background1
+{
+    background-image: url("images/image1.png");
+    background-size: cover;
+}
+
+body.background2
+{
+    background-image: url("images/image2.png");
+    background-size: cover;
+}
+body.background3
+{
+    background-image: url("images/image3.png");
+    background-size: cover;
+}
+
+body.background4
+{
+    background-image: url("images/image4.png");
+    background-size: cover;
+}
+
+body.background5
+{
+    background-image: url("images/image5.png");
+    background-size: cover;
+}
+
+body.background6
+{
+    background-image: url("images/image6.png");
+    background-size: cover;
+}
+body.background7
+{
+    background-image: url("images/image7.png");
+    background-size: cover;
+}
+
+body.background8
+{
+    background-image: url("images/image8.png");
+    background-size: cover;
+}
+
+body.background9
+{
+    background-image: url("images/image9.png");
+    background-size: cover;
+}
+
+body.background10
+{
+    background-image: url("images/image10.png");
+    background-size: cover;
+}
+body.background11
+{
+    background-image: url("images/image11.png");
+    background-size: cover;
+}
+
+body.background12
+{
+    background-image: url("images/image12.png");
+    background-size: cover;
+}
+
+body.background13
+{
+    background-image: url("images/image13.png");
+    background-size: cover;
+}
+
+body.background14
+{
+    background-image: url("images/image14.png");
+    background-size: cover;
+}
+.textmessage{
+  font-size: 50px;
+  font-family: sans-serif;
+  font-family:'uppereastsideregular';
+  /* #ff6699 */
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  width: 80%;
+}
+@-moz-keyframes spin { 0% { -moz-transform: rotateX(0deg); } 50%,100% { -moz-transform: rotateX(360deg); } }
+@-webkit-keyframes spin {0% { -webkit-transform: rotateX(0deg); } 50%,100% { -webkit-transform: rotateX(360deg); } }
+@keyframes spin { 0% { -webkit-transform: rotateX(0deg); transform:rotateX(0deg); } 50%,100% { -webkit-transform: rotateX(360deg); transform:rotateX(360deg); } }
+
+@-moz-keyframes spin2 { 0% { -moz-transform: rotateY(0deg); } 50%,100% { -moz-transform: rotateY(360deg); } }
+@-webkit-keyframes spin2 {0% { -webkit-transform: rotateY(0deg); } 50%,100% { -webkit-transform: rotateY(360deg); } }
+@keyframes spin2 { 0% { -webkit-transform: rotateY(0deg); transform:rotateY(0deg); } 50%,100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+#picture1{
+  -webkit-animation:spin2 9s linear infinite;
+   -moz-animation:spin2 9s linear infinite;
+   animation:spin2 9s linear infinite;
+}
+#picture2{
+  -webkit-animation:spin 9.5s linear infinite;
+   -moz-animation:spin 9.5s linear infinite;
+   animation:spin 9.5s linear infinite;
+}
+#panorama1{
+  -webkit-animation:spin 9.3s linear infinite;
+   -moz-animation:spin 9.3s linear infinite;
+   animation:spin 9.3s linear infinite;
+}
+#poem1{
+  -webkit-animation:spin2 59.4s linear infinite;
+   -moz-animation:spin2 59.4s linear infinite;
+   animation:spin2 59.4s linear infinite;
+}
+#rolemodel{
+  -webkit-animation:spin2 9.2s linear infinite;
+   -moz-animation:spin2 9.2s linear infinite;
+   animation:spin2 9.2s linear infinite;
+}
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1/3;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.two {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.three {
+  grid-column: 2/4;
+  grid-row: 1 / 2;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.four {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.five {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.six {
+  grid-column: 4/5;
+  grid-row: 1/5;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#quote1{
+  -webkit-animation:spin 19s linear infinite;
+   -moz-animation:spin 19s linear infinite;
+   animation:spin 19s linear infinite;
+}
+#quote2{
+  -webkit-animation:spin 19.1s linear infinite;
+   -moz-animation:spin 19.1s linear infinite;
+   animation:spin 19.1s linear infinite;
+}
+#quote3{
+  -webkit-animation:spin 19.2s linear infinite;
+   -moz-animation:spin 19.2s linear infinite;
+   animation:spin 19.2s linear infinite;
+}
+#quote4{
+  -webkit-animation:spin 19.3s linear infinite;
+   -moz-animation:spin 19.3s linear infinite;
+   animation:spin 19.3s linear infinite;
+}
+.seven {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.eight {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nine {
+  grid-column: 5/6;
+  grid-row: 3/4;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ten {
+  grid-column: 5/6;
+  grid-row: 4/5;
+  border: dotted;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inspirationaltitle{
+
+}
+.inspirationalcontent{
+
+}
+.contentarea{
+  margin-top: 10%;
+  margin-bottom: 25%;
+}

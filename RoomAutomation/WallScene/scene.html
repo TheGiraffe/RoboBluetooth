@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/scene.css">
+  <!--[if lte IE 6]>
+	<style>#top, #bottom, #left, #right { display: none; }</style>
+<![endif]-->
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+<title> Good Morning, Sophia :)</title>
+<body onload="startTime()">
+  <audio src="music/radiance.mp3" autoplay>
+  <p>If you are reading this, it is because your browser does not support the audio element.     </p>
+  <embed src="music/radiance.mp3" width="180" height="90" hidden="true" />
+  </audio>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+
+<center><div class="contentarea">
+<div id="clock"></div>
+  <div class="textmessage">
+  GOOD MORNING, SOPHIA :)</div> <iframe src="https://feed.mikle.com/widget/v2/24290/" width=50%></iframe>
+<br><a href="#meow"><button class="snoozebutton">SNOOZE</div></a>
+</div></center>
+
+<script>
+document.addEventListener("keydown", function(e) {
+  if (e.keyCode == 13) {
+    toggleFullScreen();
+  }
+}, false);
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+</script>
+</body>
+</html>
